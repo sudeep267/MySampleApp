@@ -3,7 +3,8 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
-  res.send('Hello World! This is Sudeep')
+	var msg = req.body.msg;
+  res.send('Hello World! This is Sudeep...Message from app: '+ msg)
 })
 
 app.listen(port, function () {
