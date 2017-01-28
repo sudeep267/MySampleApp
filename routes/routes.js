@@ -14,7 +14,7 @@ module.exports = function(app) {
  
     app.post('/sendm',function(req,res){
         var msg = req.body.msg;
-		res.send('Hello World! This is Sudeep...Message from app: '+msg)
+		res.end('Hello World! This is Sudeep...Message from app: '+msg)
  
     }); 
  
